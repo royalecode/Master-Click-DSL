@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Socke.io Client Example</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Nunito", sans-serif;
+            }
+
+            .game, .user, .restart, .media {
+                display: flex;
+                flex-direction: row;
+                gap: 3em;
+            }
+
+            #sendButton {
+                position: relative;
+                animation: mymove 15s infinite;
+            }
+
+            @keyframes mymove {
+                from {left: 0px;}
+                to {left: 600px;}
+            }
+        </style>
+
+        <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Master.Click.io <small id="counter">0</small></h1>
+            <div class="game">
+                <button id="sendButton">Enviar</button>
+                <div id="clicksTxt"></div>
+            </div>
+            <div class="user">
+                <p>Clicks del usuario: </p>
+                <div id="clicksUser">0</div>
+            </div>
+            <div class="media">
+                <p>Mitjana: <small id="mitjana">0</small></p>
+                <p>El usuario esta por <span id="type"> </span> de la media</p>
+            </div>
+            <div class="restart">
+                <button id="restartBtn">Restart</button>
+            </div>
+        </div>
+    </body>
+</html>
