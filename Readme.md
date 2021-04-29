@@ -1,3 +1,9 @@
+Heroku url:
+https://masterclickedmon.herokuapp.com/
+
+Github url:
+https://github.com/royalecode/Master-Click-DSL
+
 Mostrar los clicks hechos por el usuario: En el cliente ya que los otros usuarios no necesitan saber este dato. Cada cliente lleva la cuenta de sus clicks.
 
 Mostrar los clicks totales: Servidor para que puede sincronizar para todos los clientes los clicks totales simúltaniamente.
