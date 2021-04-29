@@ -14,6 +14,6 @@ Mostrar la cantidad de usuarios conectados: Implementación en el servidor, seri
 
 Añadir un botón o mecanismo para reiniciar el contador: El listener del boton obviamente en el cliente, pero la implementación esta en los dos sitios. Una parte en cliente porque hay que reiniciar el contador individual de clicks de usuario que está implementado en el cliente, y luego reiniciar el contador de los clicks totales que esto se debe hacer en el servidor que es quien lleva la cuenta.
 
-Mover el botón del click por pantalla para darle más vidilla al juego: En el cliente directamente en el index.html usando css con keyframes.
+Mover el botón del click por pantalla para darle más vidilla al juego: En el cliente directamente usando css con keyframes.
 
 Deshabilitar el intro para que no se puedan hacer trampas: En el cliente con javascript y un listener para detectar cuando pulsen la tecla enter la aplicación no haga nada.
